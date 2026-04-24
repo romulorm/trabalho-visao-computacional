@@ -110,17 +110,17 @@ initial_result = process_image(initial_image_path, initial_model_path)
 
 # Interface
 with gr.Blocks() as demo:
-    gr.Markdown("# YOLO Object Detection App")
+    gr.Markdown("# Aplicação para Detecção de armas")
     with gr.Row():
         with gr.Column():
-            model_dropdown = gr.Dropdown(choices=models, value=initial_model, label="Select Model")
-            image_display = gr.Image(value=initial_preview, label="Current Image")
-            image_name_display = gr.Textbox(label="Current Image Name", value=initial_image_name, interactive=False)
+            model_dropdown = gr.Dropdown(choices=models, value=initial_model, label="Selecione o modelo")
+            image_display = gr.Image(value=initial_preview, label="Current Image", height=400, width=600)
+            image_name_display = gr.Textbox(label="Nome da Imagem Atual", value=initial_image_name, interactive=False)
             with gr.Row():
-                prev_btn = gr.Button("Previous")
-                next_btn = gr.Button("Next")
+                prev_btn = gr.Button("Anterior")
+                next_btn = gr.Button("Próxima")
         with gr.Column():
-            result_display = gr.Image(value=initial_result, label="Detection Result")
+            result_display = gr.Image(value=initial_result, label="Resultado da Detecção", height=600, width=800)
     
     # State
     index_state = gr.State(initial_index)
