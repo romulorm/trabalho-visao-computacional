@@ -1,5 +1,5 @@
 def main():
-    print("Hello from trabalho-visao-computacional!")
+    print("Para testar os modelos de detecção, utilize o notebook teste_modelo.ipynb")
 
 
 if __name__ == "__main__":
