@@ -12,7 +12,7 @@ uv sync
 
 ## Testando o modelo
 1) Acessar o arquivo teste_modelo.ipynb
-2) Alterar a variável best_model_path para:
+2) Alterar a variável best_model_path da célula 2 para um dos modelos treinados:
 - models/best1.pt (treinado com o dataset original)
 - models/best2.pt (treinado com o dataset ampliado)
 
