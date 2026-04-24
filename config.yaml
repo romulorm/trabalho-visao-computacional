@@ -1,0 +1,9 @@
+path: /home/romulo/Documentos/ibmec/visao_computacional/praticas/trabalho_pratico/dataset # caminho absoluto
+train: train/images                                # relativo
+val: val/images                                    # relativo
+test: test/images                                  # relativo
+
+# classes
+names:
+  0: Arma_Curta
+  1: Arma_Longa

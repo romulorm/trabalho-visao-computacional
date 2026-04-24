@@ -1,1 +1,19 @@
-# trabalho-visao-computacional
+# Trabalho da disciplina de Visão Computacional
+
+## Preparando o ambiente
+
+```bash
+git clone https://github.com/romulorm/trabalho-visao-computacional.git
+cd trabalho-visao-computacional
+uv venv .venv --python 3.12
+source .venv/bin/activate #caso não ative automaticamente
+uv sync
+```
+
+## Testando o modelo
+1) Acessar o arquivo teste_modelo.ipynb
+2) Alterar a variável best_model_path para:
+- models/best1.pt (treinado com o dataset original)
+- models/best2.pt (treinado com o dataset ampliado)
+
+3) Alterar a variável img_teste entre t1.jpg e t10.jgp
